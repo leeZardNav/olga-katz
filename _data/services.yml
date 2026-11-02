@@ -1,37 +1,39 @@
-# מה אולגה כץ מצלמת. הקישורים מובילים לגלריות ולמחירונים באתר הרשמי שלה.
+# מה אני מצלמת. כל סוג צילום מקבל גלריה משלו ומחירון משלו באתר הזה.
 - key: bat_mitzvah
   title_he: בוק בת מצווה
   blurb_he: >-
-    הלב של העבודה שלה. סטים בסטודיו עם רקעים צבעוניים ושמלות בתנועה, או יום שלם בטבע שנגמר בים בשקיעה.
+    הלב של העבודה שלי. סטים בסטודיו עם רקעים צבעוניים ושמלות בתנועה, או יום שלם בטבע שנגמר בים בשקיעה.
     סטים מיוחדים לפי הנערה: הארי פוטר, גרפיטי, סוסים, פיות על החוף.
-  gallery: https://olgakatzphoto.com/%d7%92%d7%9c%d7%a8%d7%99%d7%94/%d7%a6%d7%99%d7%9c%d7%95%d7%9e%d7%99-%d7%91%d7%aa-%d7%9e%d7%a6%d7%95%d7%95%d7%94/
-  pricing: https://olgakatzphoto.com/%d7%9e%d7%97%d7%99%d7%a8%d7%95%d7%9f-%d7%91%d7%aa-%d7%9e%d7%a6%d7%95%d7%95%d7%94/
+  gallery: /gallery/bat_mitzvah/
+  pricing: /pricing/#p-bat_mitzvah
   featured: true
 - key: family
   title_he: צילומי משפחה
   blurb_he: >-
-    משפחות בסטודיו ובאור טבעי, הנושא שעליו גם הרצתה בפוטו טיפס. דגש על רגע אמיתי ולא על פוזה.
-  gallery: https://olgakatzphoto.com/%d7%92%d7%9c%d7%a8%d7%99%d7%94/%d7%a6%d7%99%d7%9c%d7%95%d7%9e%d7%99-%d7%9e%d7%a9%d7%a4%d7%97%d7%94/
-  pricing: https://olgakatzphoto.com/%d7%9e%d7%97%d7%99%d7%a8%d7%95%d7%9f-%d7%9e%d7%a9%d7%a4%d7%97%d7%94/
+    משפחה גרעינית בסטודיו, בבית או בטבע. אני מחפשת את הרגע האמיתי, לא את הפוזה.
+  gallery: /gallery/family/
+  pricing: /pricing/#p-family
 - key: one_year
   title_he: גיל שנה
   blurb_he: >-
-    יום ההולדת הראשון, הצעדים הראשונים והעוגה הראשונה. אבן הדרך שמביאה משפחות לסטודיו בפעם הראשונה.
-  gallery: https://olgakatzphoto.com/%d7%92%d7%9c%d7%a8%d7%99%d7%94/%d7%a6%d7%99%d7%9c%d7%95%d7%9e%d7%99-%d7%92%d7%99%d7%9c-%d7%a9%d7%a0%d7%94/
+    יום ההולדת הראשון, הצעדים הראשונים והעוגה הראשונה. בטבע או בסטודיו, עם אופציה לסט משפחתי.
+  gallery: /gallery/one_year/
+  pricing: /pricing/#p-maternity_one_year
 - key: maternity
   title_he: צילומי הריון
   blurb_he: >-
-    הכניסה המוקדמת ביותר למעגל הלקוחות, עוד לפני הלידה. בסטודיו או בחוץ, לבד, בזוג או עם האחים הגדולים.
-  gallery: https://olgakatzphoto.com/%d7%92%d7%9c%d7%a8%d7%99%d7%94/%d7%a6%d7%99%d7%9c%d7%95%d7%9e%d7%99-%d7%94%d7%a8%d7%99%d7%95%d7%9f/
-  pricing: https://olgakatzphoto.com/%d7%9e%d7%97%d7%99%d7%a8%d7%95%d7%9f/%d7%9e%d7%97%d7%99%d7%a8%d7%95%d7%9f-%d7%94%d7%a8%d7%99%d7%95%d7%9f/
+    הבטן, הציפייה, והאחים הגדולים שכבר מחכים. בסטודיו או בחוץ, לבד או בזוג.
+  gallery: /gallery/maternity/
+  pricing: /pricing/#p-maternity_one_year
 - key: feminine
-  title_he: צילומי נשיות
+  title_he: נשיות ותדמית
   blurb_he: >-
-    פורטרטים של נשים בוגרות. כאן "בעיניים טובות" הופך משורת ביו לשיטת עבודה.
-  gallery: https://olgakatzphoto.com/%d7%92%d7%9c%d7%a8%d7%99%d7%94/%d7%a6%d7%99%d7%9c%d7%95%d7%9e%d7%99-%d7%a0%d7%a9%d7%99%d7%95%d7%aa/
-  pricing: https://olgakatzphoto.com/%d7%9e%d7%97%d7%99%d7%a8%d7%95%d7%9f-%d7%a0%d7%a9%d7%99%d7%95%d7%aa/
+    פורטרטים של נשים. כאן "בעיניים טובות" הופך משורת ביו לשיטת עבודה.
+  gallery: /gallery/feminine/
+  pricing: /pricing/#p-feminine
 - key: generations
   title_he: צילומי דורות
   blurb_he: >-
-    סבים, סבתות, הורים ונכדים בתמונה אחת. מופיע בשם הדף העסקי שלה, לצד המשפחה וגיל השנה.
-  gallery: https://olgakatzphoto.com/%d7%92%d7%9c%d7%a8%d7%99%d7%94/
+    סבים, סבתות, הורים ונכדים בתמונה אחת. התמונה שתולים בסלון.
+  gallery: /gallery/generations/
+  pricing: /pricing/#p-family

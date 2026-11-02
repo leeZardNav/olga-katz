@@ -1,81 +1,42 @@
-# פרטי הפרופיל הציבורי של אולגה כץ, כפי שהיא מפרסמת אותם בעצמה. מידע עסקי בלבד.
+# הפרופיל, כפי שאולגה כץ מציגה אותו בעצמה בערוצים הציבוריים שלה. מידע עסקי בלבד.
 name_he: אולגה כץ
 name_en: Olga Katz
 brand: Olga Katz Photography
 city_he: רחובות
-title_he: צלמת אומנותית, בעלת סטודיו
 tagline_he: צלמת א.נשים בעיניים טובות. בסטודיו ובאור טבעי. מרחובות.
-tagline_source: פרופיל הפייסבוק של אולגה כץ
-bio_business_he: >-
-  צלמת אומנותית בעלת סטודיו ברחובות - צילומי בת מצווה, צילומי גיל שנה, צילומי משפחה, צילומי נשיות ודורות
-bio_instagram_he: בוק בת מצווה | משפחה | גיל שנה
 as_of: נובמבר 2026
 
-channels:
-  - key: website
-    label: האתר הרשמי
-    url: https://olgakatzphoto.com/
-    note: גלריות, מחירונים, מאמרים ודף לצלמים
-    primary: true
-  - key: instagram
-    label: אינסטגרם
-    url: https://www.instagram.com/olgakatz.photography/
-    handle: "@olgakatz.photography"
-    note: כ-2,700 עוקבים ו-311 פוסטים
-    primary: true
-  - key: facebook_page
-    label: הדף העסקי בפייסבוק
-    url: https://www.facebook.com/olgakatz.photography
-    note: כ-2,300 עוקבים, 10 המלצות, כולן חיוביות
-  - key: facebook_profile
-    label: הפרופיל בפייסבוק
-    url: https://www.facebook.com/olga.katz.5
-    note: כ-5,400 עוקבים, כאן מתפרסמות רוב העבודות החדשות
-  - key: whatsapp
-    label: תיאום צילומים בוואטסאפ
-    url: https://wa.me/message/O2BON3ZEXSZ2B1
-    note: הקישור הרשמי מהביו שלה באינסטגרם
-    primary: true
-  - key: linkedin
-    label: לינקדאין
-    url: https://www.linkedin.com/in/olga-katz-32a6a723/
-    note: פרופיל מקצועי
-
 facts:
-  - label: מצלמת
+  - label: מה אני מצלמת
     value: בוק בת מצווה, משפחה, גיל שנה, הריון, נשיות ודורות
   - label: איפה
-    value: סטודיו ברחובות, ובאור טבעי בטבע ובים
-  - label: סגנון
+    value: בסטודיו שלי ברחובות, ובאור טבעי בטבע ובים
+  - label: הסגנון שלי
     value: פיין ארט, צבע, תנועה וסטיילינג
-  - label: מלמדת
-    value: סדנאות באור טבעי ובסטודיו, הרצאות
-  - label: סטודיו חדש
+  - label: סדנאות
+    value: באור טבעי ובסטודיו, לצלמות ולצלמים
+  - label: הסטודיו
     value: נפתח בדצמבר 2025
 
 milestones:
   - year: "2019"
-    text_he: מופיעה בדירוג הרשמי של 35AWARDS החמישי לצלמים מרחובות, בקטגוריית צילום ילדים
-    url: https://35awards.com/winners5th/country/city/3906/
+    text_he: הופעתי בדירוג הרשמי של 35AWARDS החמישי לצלמים מרחובות, בקטגוריית צילום ילדים
   - year: "2020"
-    text_he: הרצאה אונליין בפוטו טיפס על צילומי משפחה באור טבעי
-    url: https://www.phototips.co.il/event-details/hrzh-wnlyyn-wlgh-kz-zylwmy-msphh-bwr-tby
+    text_he: הרציתי אונליין בפוטו טיפס על צילומי משפחה באור טבעי
+  - year: "2022"
+    text_he: לימדתי שיעורי סטודיו וצילומי ילדים בקורס המשפחה של קהילת צבד, והעברתי סדנת עריכה אומנותית בפוטושופ לצלמים
   - year: "2024"
-    text_he: שואורִיל באינסטגרם, "קצת מהאומנות שלי", ועונת הבוקים בגרפיטי ובטבע
-    url: https://www.instagram.com/p/C-S_5BUIFJ1/
+    text_he: פרסמתי את השואוריל שלי באינסטגרם, ועונת הבוקים בגרפיטי ובטבע
   - year: "2025"
-    text_he: פותחת סטודיו פיין ארט עצמאי, "לא חלק מהסלון, לא על הדרך"
-    url: https://www.instagram.com/p/DSCtoksjDJL/
+    text_he: פתחתי סטודיו פיין ארט עצמאי ברחובות, "לא חלק מהסלון, לא על הדרך"
   - year: "2026"
-    text_he: הפוסט "הידעתם שאני יודעת לגדל פרחים בסטודיו?", שממנו נולד הפורטל הזה
-    url: https://www.facebook.com/olga.katz.5/posts/pfbid02ScMbmrH6m5u7JK7FQ664AQEDCRpkYBeNZu4vF9PEymjAPqyqYQBfZzsfLi8FfW6sl
-
-featured_page_post:
-  url: https://www.facebook.com/olgakatz.photography/posts/pfbid02qCsrs6jj2wRwsa2yHjYAoV2vXDc2ZMnRBDr6fMuydFHJGZU1UczJvPq5UF3eTAftl
-  note_he: הפוסט הנעוץ בדף העסקי, על נערות בת המצווה שהיא מצלמת
+    text_he: למדתי לגדל פרחים בסטודיו, עם חצאית ורודה-בורדו ונערה אחת מאושרת
 
 seed_post:
   url: https://www.facebook.com/olga.katz.5/posts/pfbid02ScMbmrH6m5u7JK7FQ664AQEDCRpkYBeNZu4vF9PEymjAPqyqYQBfZzsfLi8FfW6sl
   instagram_url: https://www.instagram.com/p/DcLczBZjFgn/
   date_he: 18 באוגוסט 2026
   title_he: הידעתם שאני יודעת לגדל פרחים בסטודיו?
+
+featured_page_post:
+  url: https://www.facebook.com/olgakatz.photography/posts/pfbid02qCsrs6jj2wRwsa2yHjYAoV2vXDc2ZMnRBDr6fMuydFHJGZU1UczJvPq5UF3eTAftl

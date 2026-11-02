@@ -1,0 +1,39 @@
+---
+layout: default
+---
+{% assign key = page.gallery %}
+{% assign section = site.data.gallery_sections | where: "key", key | first %}
+{% assign items = site.data.gallery | where: "key", key %}
+<header class="page-head">
+  <div class="container">
+    <p class="eyebrow"><a href="{{ '/gallery/' | relative_url }}">הגלריות</a></p>
+    <h1 class="page-title">{{ section.title_he }}</h1>
+    <p class="lead">{{ section.intro_he }}</p>
+    <nav class="subnav" aria-label="גלריות">
+      {% for s in site.data.gallery_sections %}
+        {% assign n = site.data.gallery | where: "key", s.key | size %}
+        {% if s.key == key %}
+          <a href="{{ '/gallery/' | append: s.key | append: '/' | relative_url }}" aria-current="page">{{ s.title_he }} <span>{{ n }}</span></a>
+        {% else %}
+          <a href="{{ '/gallery/' | append: s.key | append: '/' | relative_url }}">{{ s.title_he }} <span>{{ n }}</span></a>
+        {% endif %}
+      {% endfor %}
+    </nav>
+  </div>
+</header>
+<section class="section">
+  <div class="container">
+    {% if items.size > 0 %}
+      <div class="embeds">
+        {% for g in items %}{% include gallery-item.html item=g %}{% endfor %}
+      </div>
+    {% else %}
+      <p class="empty">הגלריה הזאת עוד מתמלאת. בינתיים, העבודות החדשות שלי <a href="{{ site.instagram }}" rel="noopener" target="_blank">באינסטגרם</a>.</p>
+    {% endif %}
+    <p class="section__hint" style="margin-top:1.5rem">התמונות מוצגות מתוך הפוסטים שלי באינסטגרם ובפייסבוק. לחיצה על תמונה פותחת את הפוסט המקורי.</p>
+    <p class="hero__actions">
+      <a class="button" href="{{ site.whatsapp }}" rel="noopener" target="_blank">לתיאום צילומים</a>
+      <a class="button button--ghost" href="{{ '/pricing/' | relative_url }}">למחירון</a>
+    </p>
+  </div>
+</section>

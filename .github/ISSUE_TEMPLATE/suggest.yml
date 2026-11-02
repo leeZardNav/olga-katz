@@ -22,7 +22,7 @@ body:
     id: page
     attributes:
       label: באיזה דף
-      placeholder: למשל, /works/ או /about/
+      placeholder: למשל, /gallery/ או /pricing/
   - type: textarea
     id: details
     attributes:

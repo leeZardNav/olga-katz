@@ -1,24 +1,25 @@
 ---
 layout: default
-title: אולגה כץ, צלמת משפחה ובת מצווה מרחובות
-description: פורטל לא רשמי על אולגה כץ, צלמת אומנותית מרחובות. בוק בת מצווה, צילומי משפחה, גיל שנה, הריון, נשיות ודורות, בסטודיו ובאור טבעי. העבודות, הסגנון, ההדרכות ואיפה למצוא אותה.
+title: אולגה כץ, צילום אומנותי ברחובות
+description: אני אולגה כץ, צלמת אומנותית מרחובות. בוק בת מצווה, צילומי משפחה, גיל שנה, הריון, נשיות ודורות, בסטודיו ובאור טבעי. גלריות, מחירון וסדנאות לצלמים.
 instagram_embeds: true
+facebook_embeds: true
 ---
 {% assign pr = site.data.profile %}
 
 <section class="hero hero--person">
   <div class="container hero__inner">
-    <p class="eyebrow">פורטל לא רשמי</p>
+    <p class="eyebrow">צילום אומנותי · רחובות</p>
     <h1 class="hero__title">{{ pr.name_he }}</h1>
     <p class="hero__subtitle">{{ pr.tagline_he }}</p>
     <p class="hero__lead">
-      צלמת אומנותית מרחובות. בוק בת מצווה שנגמר בים בשקיעה, צילומי משפחה באור טבעי, גיל שנה, הריון, נשיות ודורות.
-      ומאז דצמבר 2025, סטודיו פיין ארט משלה, עם רקעים שמחליפים צבע לפי הסיפור.
+      אני מצלמת בוק בת מצווה שנגמר בים בשקיעה, משפחות באור טבעי, גיל שנה, הריון, נשיות ודורות.
+      ומאז דצמבר 2025, בסטודיו הפיין ארט שלי ברחובות, עם רקעים שמחליפים צבע לפי הסיפור.
     </p>
     <p class="hero__actions">
-      <a class="button" href="https://olgakatzphoto.com/" rel="noopener" target="_blank">לאתר הרשמי</a>
-      <a class="button button--ghost" href="https://www.instagram.com/olgakatz.photography/" rel="noopener" target="_blank">אינסטגרם</a>
-      <a class="button button--ghost" href="https://wa.me/message/O2BON3ZEXSZ2B1" rel="noopener" target="_blank">לתיאום צילומים</a>
+      <a class="button" href="{{ site.whatsapp }}" rel="noopener" target="_blank">לתיאום צילומים</a>
+      <a class="button button--ghost" href="{{ '/gallery/' | relative_url }}">לגלריות</a>
+      <a class="button button--ghost" href="{{ '/pricing/' | relative_url }}">למחירון</a>
     </p>
     <dl class="facts">
       {% for f in pr.facts %}
@@ -31,20 +32,19 @@ instagram_embeds: true
 <section class="section" aria-labelledby="seed-title">
   <div class="container split">
     <div>
-      <p class="eyebrow">התמונה שממנה התחלנו</p>
-      <h2 id="seed-title" class="section__title">"הידעתם שאני יודעת לגדל פרחים בסטודיו?"</h2>
+      <p class="eyebrow">מהסטודיו</p>
+      <h2 id="seed-title" class="section__title">הידעתם שאני יודעת לגדל פרחים בסטודיו?</h2>
       <p>
-        ב-18 באוגוסט 2026 פרסמה אולגה ארבע תמונות. בראשונה, נערה על סף בת מצווה, ידיים פרושות למעלה,
-        חצאית ורודה-בורדו מתנפנפת סביבה כמו עלי כותרת, על רקע ורוד רך בסטודיו.
-        תמונה אחת שמכילה את כל מה שהיא עושה: נערה ברגע מעבר, הרבה תנועה, הרבה רוך, ואפס פוזה קפואה.
+        נערה על סף בת מצווה, ידיים פרושות למעלה, חצאית ורודה-בורדו שנפתחת סביבה כמו עלי כותרת, על רקע ורוד רך.
+        ככה נראה סט תנועה אצלי בסטודיו: הרבה בד באוויר, הרבה רוך, ואפס פוזה קפואה.
       </p>
       <p>
-        הפורטל הזה נולד מהפוסט ההוא. הוא מאגד במקום אחד את מה שהיא מפרסמת בעצמה: העבודות, הסגנון, ההדרכות,
-        והדרכים להגיע אליה.
+        בין הפריימים שאני אוהבת ביותר הן תמונות של תנועה, והשמלות שלי מושלמות בדיוק לזה. כשהבנות שאני מצלמת זורמות
+        איתי ומרגישות כמו נסיכות, אני בכלל מאושרת.
       </p>
-      <p><a href="{{ '/about/' | relative_url }}">מי היא ואיך היא עובדת</a></p>
+      <p><a href="{{ '/gallery/bat_mitzvah/' | relative_url }}">לגלריית בוק בת מצווה</a></p>
     </div>
-    {% include fb-post.html url=pr.seed_post.url title="הפוסט שממנו התחיל הפורטל" %}
+    {% include fb-post.html url=pr.seed_post.url title="הידעתם שאני יודעת לגדל פרחים בסטודיו?" %}
   </div>
 </section>
 
@@ -52,8 +52,8 @@ instagram_embeds: true
   <div class="container">
     <div class="section__head">
       <div>
-        <h2 id="services-title" class="section__title">מה היא מצלמת</h2>
-        <p class="section__hint">הקישורים מובילים לגלריות ולמחירונים באתר הרשמי שלה.</p>
+        <h2 id="services-title" class="section__title">מה אני מצלמת</h2>
+        <p class="section__hint">לכל סוג צילום יש גלריה ומחירון משלו.</p>
       </div>
     </div>
     <div class="services">
@@ -66,10 +66,10 @@ instagram_embeds: true
   <div class="container">
     <div class="section__head">
       <div>
-        <h2 id="works-title" class="section__title">עבודות נבחרות</h2>
-        <p class="section__hint">מתוך האינסטגרם שלה, דרך ההטמעה הרשמית. כל לחיצה מובילה לפוסט המקורי.</p>
+        <h2 id="works-title" class="section__title">מהאינסטגרם שלי</h2>
+        <p class="section__hint">עבודות אחרונות. לחיצה פותחת את הפוסט המקורי.</p>
       </div>
-      <a class="button button--ghost" href="{{ '/works/' | relative_url }}">לכל העבודות הנבחרות</a>
+      <a class="button button--ghost" href="{{ '/gallery/' | relative_url }}">לכל הגלריות</a>
     </div>
     <div class="embeds">
       {% assign home_works = site.data.works | where: "home", true %}
@@ -80,7 +80,7 @@ instagram_embeds: true
 
 <section class="section" aria-labelledby="quotes-title">
   <div class="container">
-    <h2 id="quotes-title" class="section__title">במילים שלה</h2>
+    <h2 id="quotes-title" class="section__title">במילים שלי</h2>
     <div class="quotes">
       {% for q in site.data.quotes limit: 3 %}
         <blockquote>
@@ -97,32 +97,28 @@ instagram_embeds: true
     <div class="teaser">
       <div>
         <p class="eyebrow">לצלמות ולצלמים</p>
-        <h2 id="teach-title">גם מלמדת</h2>
+        <h2 id="teach-title">אני גם מלמדת</h2>
         <p>
-          סדנאות באור טבעי, סדנאות סטודיו והדרכות לצלמות בתחילת הדרך. ב-2020 העבירה בפוטו טיפס, קהילת לימוד הצילום
-          הגדולה בישראל, הרצאה אונליין על צילומי משפחה באור טבעי.
+          סדנאות באור טבעי, סדנאות סטודיו והדרכות לצלמות בתחילת הדרך. ב-2020 הרציתי בפוטו טיפס, קהילת לימוד הצילום
+          הגדולה בישראל, על צילומי משפחה באור טבעי.
         </p>
-        <p><a href="{{ '/teaching/' | relative_url }}">מה היא מלמדת</a></p>
+        <p><a href="{{ '/workshops/' | relative_url }}">על הסדנאות שלי</a></p>
       </div>
       <blockquote class="teaser__aside">
         לפעמים שווה להפוך הכל לרגע בשביל לקבל עוד נקודת מבט.
-        <small>פוסט באינסטגרם, ינואר 2026</small>
+        <small>מתוך הפוסטים שלי, ינואר 2026</small>
       </blockquote>
     </div>
   </div>
 </section>
 
-<section class="section" aria-labelledby="channels-title">
+<section class="section" aria-labelledby="contact-title">
   <div class="container">
-    <h2 id="channels-title" class="section__title">איפה למצוא אותה</h2>
-    <div class="channel-grid">
-      {% for c in pr.channels %}
-        <a class="channel{% if c.primary %} channel--primary{% endif %}" href="{{ c.url }}" rel="noopener" target="_blank">
-          <strong>{{ c.label }}</strong>
-          <span>{{ c.note }}</span>
-        </a>
-      {% endfor %}
-    </div>
-    <p class="section__hint">המספרים נכונים ל{{ pr.as_of }}. אין כאן טלפון או מייל: לפנייה ישירה, הוואטסאפ והאתר הרשמי.</p>
+    <h2 id="contact-title" class="section__title">בואו נדבר</h2>
+    <p class="lead">הדרך הכי מהירה אליי היא וואטסאפ. ספרו לי מה חוגגים, מתי בערך וכמה מצולמים, ואחזור אליכם עם הצעה.</p>
+    <p class="hero__actions">
+      <a class="button" href="{{ site.whatsapp }}" rel="noopener" target="_blank">לתיאום צילומים בוואטסאפ</a>
+      <a class="button button--ghost" href="{{ '/contact/' | relative_url }}">כל דרכי הקשר</a>
+    </p>
   </div>
 </section>

@@ -1,0 +1,164 @@
+# הגלריות. כל פריט הוא פוסט ציבורי שלי באינסטגרם (ig: קוד הפוסט) או בפייסבוק (fb: קישור הפוסט או התמונה).
+# key הוא אחד מהערכים בקובץ gallery_sections.yml. התמונות מוצגות דרך ההטמעה הרשמית ולא נשמרות כאן.
+
+# בוק בת מצווה
+
+- key: bat_mitzvah
+  ig: Dcdrj5VjGPL
+  date: 2026-08
+  caption_he: כשהיא רוקדת את החיים מול המצלמה
+- key: bat_mitzvah
+  ig: Dbn54DjjOvk
+  date: 2026-08
+  caption_he: סוס לבן משלה, בטבע
+- key: bat_mitzvah
+  ig: DZNrIqHDNoe
+  date: 2026-06
+  caption_he: סט פיות על החוף, דקות אחרי השקיעה
+- key: bat_mitzvah
+  ig: DYXZdF7M6gf
+  date: 2026-05
+  caption_he: כמעט כל בוק נגמר בים
+- key: bat_mitzvah
+  ig: DURIFxLjKLm
+  date: 2026-02
+  caption_he: נסיכה עם חיוך כובש, בסטודיו
+- key: bat_mitzvah
+  ig: DUEB10EDCYg
+  date: 2026-01
+  caption_he: רקע בורדו חדש בסטודיו
+- key: bat_mitzvah
+  ig: DSXaUI9DB7p
+  date: 2025-12
+  caption_he: סט נקי בסטודיו, והרקע שהחליף צבע בעריכה
+- key: bat_mitzvah
+  ig: DLxepy4MbXv
+  date: 2025-07
+  caption_he: וואו 12! לא מוותרים על צילומים בגיל הזה
+- key: bat_mitzvah
+  ig: DKRPlkSskg_
+  date: 2025-05
+  caption_he: עלמה, כמו מסיפור אגדה
+- key: bat_mitzvah
+  ig: DIqb4dgsYKe
+  date: 2025-04
+  video: true
+  caption_he: הבוק של נועה בטבע, בווידאו
+- key: bat_mitzvah
+  ig: DH7py4GIiLX
+  date: 2025-04
+  caption_he: סט הארי פוטר, עם אביזרים ולוקיישנים תואמים
+- key: bat_mitzvah
+  ig: DHQ8BqUIpJR
+  date: 2025-03
+  caption_he: הבוק של שחר
+- key: bat_mitzvah
+  ig: DF2jEClI_8h
+  date: 2025-02
+  caption_he: צילומים בים, בחורף
+- key: bat_mitzvah
+  ig: DEzJxTDo0hO
+  date: 2025-01
+  caption_he: כמו פיה ביער מכושף
+- key: bat_mitzvah
+  ig: DDO4V0UovcQ
+  date: 2024-12
+  caption_he: סט רוק וגראנג'
+- key: bat_mitzvah
+  ig: DDNBHIPI7wV
+  date: 2024-12
+  caption_he: סטייל שיקי ונקי בסטודיו
+- key: bat_mitzvah
+  ig: DCQvsVEIESA
+  date: 2024-11
+  caption_he: בוק גרפיטי
+- key: bat_mitzvah
+  ig: DBeCt54oEyo
+  date: 2024-10
+  caption_he: תנועה, והשמלות שלי
+
+# צילומי משפחה
+
+- key: family
+  ig: C94i4egIpIR
+  date: 2024-07
+  caption_he: סוף הסשן, כשהשמש שוקעת, הזמן הכי נפלא לצאת לשטחים הפתוחים
+- key: family
+  ig: C86dnTUoEW-
+  date: 2024-07
+  caption_he: היופי של הטבע, שחוזר כל שנה
+- key: family
+  ig: C6x4NG4I5IH
+  date: 2024-05
+  caption_he: סופש של טבע ומשפחות יפות
+- key: family
+  ig: C4Axu_uI43H
+  date: 2024-03
+  caption_he: אווה בפריחה הכי יפה
+- key: family
+  ig: C2hxzEqoEhL
+  date: 2024-01
+  caption_he: סט אחרון של משפחה יפה, לפני שהטבע פורח
+- key: family
+  ig: C2czzzbIKrf
+  date: 2024-01
+  caption_he: הקסם המיוחד של הפריחה
+- key: family
+  ig: CpSuq2VtVJq
+  date: 2023-03
+  caption_he: סט אחרון מהמשפחה המהממת הזאת
+- key: family
+  ig: CpPTrTIoLEq
+  date: 2023-03
+  caption_he: אמא ובת בפריחה הכי יפה בשנה
+- key: family
+  ig: CpNG4CUISjQ
+  date: 2023-02
+  caption_he: יופי טהור בפריחת השקדיות
+- key: family
+  ig: Ccupx1EMMic
+  date: 2022-04
+  caption_he: משפחת פלג, אחרי הרחבת המשפחה
+- key: family
+  ig: CcM0uQftjB8
+  date: 2022-04
+  caption_he: להיות אחד בשביל השני
+- key: family
+  ig: CZIAuXmIKnV
+  date: 2022-01
+  caption_he: תאומים שחוקרים את העולם
+- key: family
+  ig: CZjDa-dtDIF
+  date: 2022-02
+  caption_he: אולגה הקטנה, בוורוד של הפריחה
+- key: family
+  ig: CZU2ZBQoijd
+  date: 2022-01
+  caption_he: היפיופה הקטנה הזאת
+
+# דורות
+
+- key: generations
+  ig: CZJPRkFolHT
+  date: 2022-01
+  caption_he: מזל, סבתא-רבתא, עם רונה-לי הנינה. סט שצובט לי את הלב
+
+# גיל שנה
+
+- key: one_year
+  ig: C33PDGeoFZo
+  date: 2024-02
+  caption_he: סגירת מעגל, גיל שנה בפריחת השקדיות, שנה אחרי שהצטרף כניובורן לבוק של אחותו
+
+- key: one_year
+  ig: CfB7i4GIrO3
+  date: 2022-06
+  caption_he: צילומי אחים בתוך צילומי גיל שנה? ברור
+- key: one_year
+  ig: C81C-U-oSUp
+  date: 2024-06
+  caption_he: עונת הרימונים, הלוקיישן הכי עסיסי שיש
+- key: one_year
+  ig: C-pAaehoyXA
+  date: 2024-08
+  caption_he: שדות הכותנה של סוף הקיץ

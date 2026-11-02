@@ -1,14 +1,14 @@
 - title: בית
   url: /
-- title: העבודות
-  url: /works/
-- title: אודות
+- title: הגלריות
+  url: /gallery/
+- title: מחירון
+  url: /pricing/
+- title: מי אני
   url: /about/
 - title: לצלמות ולצלמים
-  url: /teaching/
-- title: מאמרים
-  url: /articles/
-- title: קישורים
-  url: /links/
-- title: על הפורטל
-  url: /portal/
+  url: /workshops/
+- title: טיפים
+  url: /tips/
+- title: צרו קשר
+  url: /contact/

@@ -1,0 +1,59 @@
+---
+layout: default
+title: המחירון שלי
+description: המחירון של אולגה כץ, בוק בת ובר מצווה, צילומי משפחה ודורות, הריון וגיל שנה, נשיות ותדמית. חבילות, שעות צילום, מספר תמונות ואלבומים.
+permalink: /pricing/
+---
+{% assign pr = site.data.pricing %}
+<header class="page-head">
+  <div class="container">
+    <p class="eyebrow">מחירון</p>
+    <h1 class="page-title">המחירון שלי</h1>
+    <p class="lead">{{ pr.note_he }}</p>
+    <nav class="subnav" aria-label="סוגי צילום">
+      {% for c in pr.categories %}<a href="#p-{{ c.key }}">{{ c.title_he }}</a>{% endfor %}
+    </nav>
+  </div>
+</header>
+
+{% for c in pr.categories %}
+<section class="section" id="p-{{ c.key }}" aria-labelledby="p-{{ c.key }}-title">
+  <div class="container">
+    <h2 id="p-{{ c.key }}-title" class="section__title">{{ c.title_he }}</h2>
+    <div class="packages">
+      {% for p in c.packages %}
+      <article class="package{% if p.badge_he %} package--highlight{% endif %}">
+        {% if p.badge_he %}<p class="package__badge">{{ p.badge_he }}</p>{% endif %}
+        <h3 class="package__name">{{ p.name_he }}</h3>
+        <p class="package__for">{{ p.for_he }}</p>
+        <p class="package__price"><span class="package__currency">₪</span>{{ p.price }}</p>
+        <ul class="package__items">
+          {% for i in p.items_he %}<li>{{ i }}</li>{% endfor %}
+        </ul>
+        <a class="button" href="{{ site.whatsapp }}" rel="noopener" target="_blank">להזמנת צילומים</a>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endfor %}
+
+<section class="section">
+  <div class="container">
+    <div class="teaser">
+      <div>
+        <p class="eyebrow">לפני שסוגרים</p>
+        <h2>מה כדאי לדעת</h2>
+        <p>
+          בכל חבילה יש עריכה בסיסית לכל התמונות ועריכה אומנותית לנבחרות. את הלוקיישן בוחרים יחד, בסטודיו שלי ברחובות,
+          בטבע או בים. בוק בת מצווה כמעט תמיד נגמר בחוף, בשקיעה. שאלות על אלבומים, שמלות או סט מיוחד? דברו איתי.
+        </p>
+        <p><a class="button button--ghost" href="{{ site.whatsapp }}" rel="noopener" target="_blank">לשיחה בוואטסאפ</a></p>
+      </div>
+      <blockquote class="teaser__aside">
+        לפעמים שווה להפוך הכל לרגע בשביל לקבל עוד נקודת מבט.
+        <small>מתוך הפוסטים שלי, ינואר 2026</small>
+      </blockquote>
+    </div>
+  </div>
+</section>

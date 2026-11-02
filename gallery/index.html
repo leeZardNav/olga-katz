@@ -1,0 +1,27 @@
+---
+layout: default
+title: הגלריות שלי
+description: הגלריות של אולגה כץ, בוק בת מצווה, צילומי משפחה, גיל שנה, הריון, נשיות ודורות, בסטודיו ברחובות ובאור טבעי.
+permalink: /gallery/
+---
+<header class="page-head">
+  <div class="container">
+    <p class="eyebrow">הגלריות</p>
+    <h1 class="page-title">העבודות שלי</h1>
+    <p class="lead">לפי סוג צילום. בכל גלריה, התמונות מוצגות מתוך הפוסטים שלי באינסטגרם ובפייסבוק, ולחיצה פותחת את הפוסט המקורי.</p>
+  </div>
+</header>
+<section class="section">
+  <div class="container">
+    <div class="gallery-cards">
+      {% for s in site.data.gallery_sections %}
+        {% assign n = site.data.gallery | where: "key", s.key | size %}
+        <a class="gallery-card" href="{{ '/gallery/' | append: s.key | append: '/' | relative_url }}">
+          <h3>{{ s.title_he }}</h3>
+          <p>{{ s.intro_he }}</p>
+          <span>{% if n > 0 %}{{ n }} פוסטים{% else %}בקרוב{% endif %}</span>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>

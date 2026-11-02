@@ -1,5 +1,7 @@
-{% assign href = include.url | url_encode %}
 <div class="fb-embed">
-  <iframe src="https://www.facebook.com/plugins/post.php?href={{ href }}&show_text=true&width=500&locale=he_IL" width="500" height="{{ include.height | default: 900 }}" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" loading="lazy" title="{{ include.title | default: 'פוסט בפייסבוק של אולגה כץ' }}"></iframe>
-  <p class="fb-embed__fallback"><a href="{{ include.url }}" rel="noopener" target="_blank">לפוסט המקורי בפייסבוק</a></p>
+  <div class="fb-post" data-href="{{ include.url }}" data-width="auto" data-show-text="true" data-lazy="true">
+    <blockquote cite="{{ include.url }}" class="fb-xfbml-parse-ignore">
+      <a href="{{ include.url }}" rel="noopener" target="_blank">{{ include.title | default: 'הפוסט בפייסבוק' }}</a>
+    </blockquote>
+  </div>
 </div>
