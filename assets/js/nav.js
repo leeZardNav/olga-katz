@@ -1,10 +1,11 @@
 (function () {
-  var links = Array.prototype.slice.call(document.querySelectorAll('.site-nav a[href*="#"]'));
+  var links = Array.prototype.slice.call(document.querySelectorAll('.site-nav a'));
   if (!links.length || !('IntersectionObserver' in window)) return;
   var byId = {};
   links.forEach(function (a) {
-    var id = a.getAttribute('href').split('#')[1];
-    if (id) byId[id] = a;
+    var href = a.getAttribute('href') || '';
+    var key = href.indexOf('#') > -1 ? href.split('#')[1] : href.replace(/\/+$/, '').split('/').pop();
+    if (key) byId[key] = a;
   });
   var sections = Object.keys(byId).map(function (id) { return document.getElementById(id); }).filter(Boolean);
   if (!sections.length) return;

@@ -1659,3 +1659,36 @@ html {
   font-size: 0.85rem;
   margin: 1rem 0 0;
 }
+
+@media (max-width: 900px) {
+  .site-header {
+    position: static;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  .site-header__inner {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .brand {
+    align-items: center;
+  }
+
+  .brand__signature {
+    font-size: 2rem;
+  }
+
+  .site-nav {
+    justify-content: center;
+  }
+
+  html {
+    scroll-padding-top: 1rem;
+  }
+
+  .section-anchor {
+    scroll-margin-top: 1rem;
+  }
+}
