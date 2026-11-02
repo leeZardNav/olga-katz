@@ -8,7 +8,7 @@
 </figure>
 {% elsif g.fb %}
 <figure class="embed embed--fb">
-  {% include fb-post.html url=g.fb title=g.caption_he width=350 height=560 show_text=false %}
+  {% include fb-post.html url=g.fb title=g.caption_he width=350 height=g.fb_height show_text=false %}
   {% if g.caption_he %}<figcaption><span>{{ g.caption_he }}</span>{% if g.date %}<a href="{{ g.fb }}" rel="noopener" target="_blank">{{ g.date }}</a>{% endif %}</figcaption>{% endif %}
 </figure>
 {% endif %}

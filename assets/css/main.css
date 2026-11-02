@@ -1240,3 +1240,23 @@ ul {
   box-shadow: none;
   border-radius: 0;
 }
+
+.portrait {
+  float: inline-end;
+  width: min(100%, 350px);
+  margin: 0 0 1.25rem 1.75rem;
+}
+
+.portrait .fb-embed {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+@media (max-width: 720px) {
+  .portrait {
+    float: none;
+    margin: 0 auto 1.5rem;
+  }
+}
