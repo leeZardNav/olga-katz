@@ -1,7 +1,8 @@
-<div class="fb-embed">
-  <div class="fb-post" data-href="{{ include.url }}" data-width="auto" data-show-text="true" data-lazy="true">
-    <blockquote cite="{{ include.url }}" class="fb-xfbml-parse-ignore">
-      <a href="{{ include.url }}" rel="noopener" target="_blank">{{ include.title | default: 'הפוסט בפייסבוק' }}</a>
-    </blockquote>
-  </div>
+{% assign href = include.url | url_encode %}
+{% assign w = include.width | default: 500 %}
+{% assign h = include.height | default: 900 %}
+{% if include.show_text == false %}{% assign st = 'false' %}{% else %}{% assign st = 'true' %}{% endif %}
+<div class="fb-embed" style="max-width:{{ w }}px">
+  <iframe src="https://www.facebook.com/plugins/post.php?href={{ href }}&show_text={{ st }}&width={{ w }}&locale=he_IL" width="{{ w }}" height="{{ h }}" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" loading="lazy" title="{{ include.title | default: 'הפוסט שלי בפייסבוק' }}"></iframe>
+  <p class="fb-embed__fallback"><a href="{{ include.url }}" rel="noopener" target="_blank">לפוסט בפייסבוק</a></p>
 </div>

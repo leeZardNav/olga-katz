@@ -1221,3 +1221,22 @@ ul {
   flex-wrap: wrap;
   margin-bottom: 1.25rem;
 }
+
+.fb-embed {
+  margin-inline: auto;
+  width: 100%;
+}
+
+.fb-embed iframe {
+  max-width: 100%;
+}
+
+.embed--fb {
+  padding: 0;
+}
+
+.embed--fb .fb-embed {
+  border: 0;
+  box-shadow: none;
+  border-radius: 0;
+}
