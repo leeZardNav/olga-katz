@@ -1,0 +1,128 @@
+---
+layout: default
+title: אולגה כץ, צלמת משפחה ובת מצווה מרחובות
+description: פורטל לא רשמי על אולגה כץ, צלמת אומנותית מרחובות. בוק בת מצווה, צילומי משפחה, גיל שנה, הריון, נשיות ודורות, בסטודיו ובאור טבעי. העבודות, הסגנון, ההדרכות ואיפה למצוא אותה.
+instagram_embeds: true
+---
+{% assign pr = site.data.profile %}
+
+<section class="hero hero--person">
+  <div class="container hero__inner">
+    <p class="eyebrow">פורטל לא רשמי</p>
+    <h1 class="hero__title">{{ pr.name_he }}</h1>
+    <p class="hero__subtitle">{{ pr.tagline_he }}</p>
+    <p class="hero__lead">
+      צלמת אומנותית מרחובות. בוק בת מצווה שנגמר בים בשקיעה, צילומי משפחה באור טבעי, גיל שנה, הריון, נשיות ודורות.
+      ומאז דצמבר 2025, סטודיו פיין ארט משלה, עם רקעים שמחליפים צבע לפי הסיפור.
+    </p>
+    <p class="hero__actions">
+      <a class="button" href="https://olgakatzphoto.com/" rel="noopener" target="_blank">לאתר הרשמי</a>
+      <a class="button button--ghost" href="https://www.instagram.com/olgakatz.photography/" rel="noopener" target="_blank">אינסטגרם</a>
+      <a class="button button--ghost" href="https://wa.me/message/O2BON3ZEXSZ2B1" rel="noopener" target="_blank">לתיאום צילומים</a>
+    </p>
+    <dl class="facts">
+      {% for f in pr.facts %}
+        <div><dt>{{ f.label }}</dt><dd>{{ f.value }}</dd></div>
+      {% endfor %}
+    </dl>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="seed-title">
+  <div class="container split">
+    <div>
+      <p class="eyebrow">התמונה שממנה התחלנו</p>
+      <h2 id="seed-title" class="section__title">"הידעתם שאני יודעת לגדל פרחים בסטודיו?"</h2>
+      <p>
+        ב-18 באוגוסט 2026 פרסמה אולגה ארבע תמונות. בראשונה, נערה על סף בת מצווה, ידיים פרושות למעלה,
+        חצאית ורודה-בורדו מתנפנפת סביבה כמו עלי כותרת, על רקע ורוד רך בסטודיו.
+        תמונה אחת שמכילה את כל מה שהיא עושה: נערה ברגע מעבר, הרבה תנועה, הרבה רוך, ואפס פוזה קפואה.
+      </p>
+      <p>
+        הפורטל הזה נולד מהפוסט ההוא. הוא מאגד במקום אחד את מה שהיא מפרסמת בעצמה: העבודות, הסגנון, ההדרכות,
+        והדרכים להגיע אליה.
+      </p>
+      <p><a href="{{ '/about/' | relative_url }}">מי היא ואיך היא עובדת</a></p>
+    </div>
+    {% include fb-post.html url=pr.seed_post.url title="הפוסט שממנו התחיל הפורטל" %}
+  </div>
+</section>
+
+<section class="section" aria-labelledby="services-title">
+  <div class="container">
+    <div class="section__head">
+      <div>
+        <h2 id="services-title" class="section__title">מה היא מצלמת</h2>
+        <p class="section__hint">הקישורים מובילים לגלריות ולמחירונים באתר הרשמי שלה.</p>
+      </div>
+    </div>
+    <div class="services">
+      {% for s in site.data.services %}{% include service.html service=s %}{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="works-title">
+  <div class="container">
+    <div class="section__head">
+      <div>
+        <h2 id="works-title" class="section__title">עבודות נבחרות</h2>
+        <p class="section__hint">מתוך האינסטגרם שלה, דרך ההטמעה הרשמית. כל לחיצה מובילה לפוסט המקורי.</p>
+      </div>
+      <a class="button button--ghost" href="{{ '/works/' | relative_url }}">לכל העבודות הנבחרות</a>
+    </div>
+    <div class="embeds">
+      {% assign home_works = site.data.works | where: "home", true %}
+      {% for w in home_works %}{% include embed.html work=w %}{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="quotes-title">
+  <div class="container">
+    <h2 id="quotes-title" class="section__title">במילים שלה</h2>
+    <div class="quotes">
+      {% for q in site.data.quotes limit: 3 %}
+        <blockquote>
+          {{ q.text_he }}
+          <footer><a href="{{ q.url }}" rel="noopener" target="_blank">{{ q.source_he }}</a></footer>
+        </blockquote>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="teach-title">
+  <div class="container">
+    <div class="teaser">
+      <div>
+        <p class="eyebrow">לצלמות ולצלמים</p>
+        <h2 id="teach-title">גם מלמדת</h2>
+        <p>
+          סדנאות באור טבעי, סדנאות סטודיו והדרכות לצלמות בתחילת הדרך. ב-2020 העבירה בפוטו טיפס, קהילת לימוד הצילום
+          הגדולה בישראל, הרצאה אונליין על צילומי משפחה באור טבעי.
+        </p>
+        <p><a href="{{ '/teaching/' | relative_url }}">מה היא מלמדת</a></p>
+      </div>
+      <blockquote class="teaser__aside">
+        לפעמים שווה להפוך הכל לרגע בשביל לקבל עוד נקודת מבט.
+        <small>פוסט באינסטגרם, ינואר 2026</small>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="channels-title">
+  <div class="container">
+    <h2 id="channels-title" class="section__title">איפה למצוא אותה</h2>
+    <div class="channel-grid">
+      {% for c in pr.channels %}
+        <a class="channel{% if c.primary %} channel--primary{% endif %}" href="{{ c.url }}" rel="noopener" target="_blank">
+          <strong>{{ c.label }}</strong>
+          <span>{{ c.note }}</span>
+        </a>
+      {% endfor %}
+    </div>
+    <p class="section__hint">המספרים נכונים ל{{ pr.as_of }}. אין כאן טלפון או מייל: לפנייה ישירה, הוואטסאפ והאתר הרשמי.</p>
+  </div>
+</section>

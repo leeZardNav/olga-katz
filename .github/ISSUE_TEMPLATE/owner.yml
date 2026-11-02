@@ -1,0 +1,32 @@
+name: בקשה מאולגה כץ
+description: עדכון, הסרה של תוכן, הסרה של הפורטל כולו, או העברת הבעלות על המאגר אלייך.
+title: "בקשה מאולגה: "
+labels: ["בקשת בעלים"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        הפורטל הזה נבנה ממה שפרסמת בעצמך, והוא שלך. כל בקשה כאן מתבצעת בלי שאלות.
+        כדי לוודא שהבקשה אכן ממך, נבקש אישור קצר דרך הדף העסקי בפייסבוק או האינסטגרם שלך.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: מה לעשות
+      options:
+        - לעדכן או לתקן פרט
+        - להסיר תוכן מסוים
+        - להסיר את הפורטל כולו
+        - להעביר אליי את הבעלות על המאגר
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: הפרטים
+    validations:
+      required: true
+  - type: input
+    id: verify
+    attributes:
+      label: איך לאמת
+      description: למשל, הודעה מהדף העסקי, או פוסט קצר שמאשר את הבקשה

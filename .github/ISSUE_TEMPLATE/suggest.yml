@@ -1,0 +1,37 @@
+name: הצעת תיקון או תוספת
+description: טעות בטקסט, קישור שבור, עבודה או ציטוט שכדאי להוסיף.
+title: "הצעה: "
+labels: ["הצעה"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        תודה! רק מקורות ציבוריים של אולגה כץ עצמה, רק מידע עסקי, ובמילים שלכם.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: סוג ההצעה
+      options:
+        - תיקון טקסט או קישור
+        - עבודה נוספת לרשימת העבודות הנבחרות
+        - ציטוט או מקור חדש
+        - רעיון לדף חדש
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: באיזה דף
+      placeholder: למשל, /works/ או /about/
+  - type: textarea
+    id: details
+    attributes:
+      label: מה להוסיף או לשנות
+      description: לעבודה נוספת, הדביקו את קישור הפוסט הציבורי באינסטגרם או בפייסבוק
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: קישור למקור
+      placeholder: https://

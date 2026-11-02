@@ -1,0 +1,9 @@
+{% assign s = include.service %}
+<article class="service{% if s.featured %} service--featured{% endif %}">
+  <h3 class="service__title">{{ s.title_he }}</h3>
+  <p class="service__blurb">{{ s.blurb_he }}</p>
+  <p class="service__links">
+    <a href="{{ s.gallery }}" rel="noopener" target="_blank" aria-label="הגלריה של {{ s.title_he }} באתר הרשמי">לגלריה</a>
+    {% if s.pricing %}<a href="{{ s.pricing }}" rel="noopener" target="_blank" aria-label="המחירון של {{ s.title_he }} באתר הרשמי">למחירון</a>{% endif %}
+  </p>
+</article>

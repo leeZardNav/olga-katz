@@ -1,0 +1,38 @@
+title: אולגה כץ
+tagline: צלמת משפחה ובת מצווה, רחובות
+description: >-
+  פורטל לא רשמי על אולגה כץ, צלמת אומנותית מרחובות: בוק בת מצווה, צילומי משפחה, גיל שנה, הריון,
+  נשיות ודורות, בסטודיו ובאור טבעי. העבודות, הסגנון, ההדרכות, ואיפה למצוא אותה.
+lang: he
+locale: he_IL
+url: https://leezardnav.github.io
+baseurl: /olga-katz
+repository: leeZardNav/olga-katz
+github_repo_url: https://github.com/leeZardNav/olga-katz
+github_edit_base: https://github.com/leeZardNav/olga-katz/edit/main
+github_new_issue: https://github.com/leeZardNav/olga-katz/issues/new/choose
+
+markdown: kramdown
+kramdown:
+  input: GFM
+permalink: pretty
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - README.md
+  - CONTRIBUTING.md
+  - LICENSE
+  - control-plane-works
+  - node_modules
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
