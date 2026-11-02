@@ -6,9 +6,9 @@ lead: אני אולגה כץ. צלמת א.נשים בעיניים טובות, ב
 permalink: /about/
 ---
 
-<div class="portrait">
-{% include fb-post.html url="https://www.facebook.com/photo.php?fbid=1441394427993081" width=350 height=580 show_text=false title="אולגה כץ, פורטרט" %}
-</div>
+<figure class="portrait">
+<img src="{{ '/assets/img/olga-katz.jpg' | relative_url }}" alt="אולגה כץ, פורטרט סטודיו" width="933" height="1400">
+</figure>
 
 אני צלמת אומנותית, אמא לשלוש בנות, ובעלת סטודיו ברחובות. אני מצלמת בוק בת מצווה, צילומי משפחה, גיל שנה, הריון,
 נשיות ודורות. בסטודיו, בטבע, ובים, שבו כמעט כל בוק שאני מצלמת נגמר.
