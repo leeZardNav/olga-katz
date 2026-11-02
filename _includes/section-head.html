@@ -1,0 +1,6 @@
+<div class="section-head{% if include.align == 'start' %} section-head--start{% endif %}">
+  {% if include.kicker %}<span class="section-head__kicker">{{ include.kicker }}</span>{% endif %}
+  <h2 id="{{ include.id }}" class="section-head__title">{{ include.title }}</h2>
+  {% include ornament.html %}
+  {% if include.lead %}<p class="section-head__lead">{{ include.lead }}</p>{% endif %}
+</div>

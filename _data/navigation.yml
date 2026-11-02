@@ -1,14 +1,14 @@
 - title: בית
-  url: /
+  url: /#top
+- title: מי אני
+  url: /#about
+- title: מה אני מצלמת
+  url: /#services
 - title: הגלריות
   url: /gallery/
 - title: מחירון
   url: /pricing/
-- title: מי אני
-  url: /about/
-- title: לצלמות ולצלמים
-  url: /workshops/
-- title: טיפים
-  url: /tips/
+- title: סדנאות
+  url: /#workshops
 - title: צרו קשר
-  url: /contact/
+  url: /#contact

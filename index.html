@@ -3,84 +3,103 @@ layout: default
 title: אולגה כץ, צילום אומנותי ברחובות
 description: אני אולגה כץ, צלמת אומנותית מרחובות. בוק בת מצווה, צילומי משפחה, גיל שנה, הריון, נשיות ודורות, בסטודיו ובאור טבעי. גלריות, מחירון וסדנאות לצלמים.
 instagram_embeds: true
-facebook_embeds: true
 ---
 {% assign pr = site.data.profile %}
 
-<section class="hero hero--person">
-  <div class="container hero__inner">
-    <p class="eyebrow">צילום אומנותי · רחובות</p>
-    <h1 class="hero__title">{{ pr.name_he }}</h1>
-    <p class="hero__subtitle">{{ pr.tagline_he }}</p>
-    <p class="hero__lead">
-      אני מצלמת בוק בת מצווה שנגמר בים בשקיעה, משפחות באור טבעי, גיל שנה, הריון, נשיות ודורות.
-      ומאז דצמבר 2025, בסטודיו הפיין ארט שלי ברחובות, עם רקעים שמחליפים צבע לפי הסיפור.
-    </p>
-    <p class="hero__actions">
-      <a class="button" href="{{ site.whatsapp }}" rel="noopener" target="_blank">לתיאום צילומים</a>
-      <a class="button button--ghost" href="{{ '/gallery/' | relative_url }}">לגלריות</a>
-      <a class="button button--ghost" href="{{ '/pricing/' | relative_url }}">למחירון</a>
-    </p>
-    <dl class="facts">
-      {% for f in pr.facts %}
-        <div><dt>{{ f.label }}</dt><dd>{{ f.value }}</dd></div>
-      {% endfor %}
-    </dl>
-  </div>
-</section>
-
-<section class="section" aria-labelledby="seed-title">
-  <div class="container split">
-    <div>
-      <p class="eyebrow">מהסטודיו</p>
-      <h2 id="seed-title" class="section__title">הידעתם שאני יודעת לגדל פרחים בסטודיו?</h2>
-      <p>
-        נערה על סף בת מצווה, ידיים פרושות למעלה, חצאית ורודה-בורדו שנפתחת סביבה כמו עלי כותרת, על רקע ורוד רך.
-        ככה נראה סט תנועה אצלי בסטודיו: הרבה בד באוויר, הרבה רוך, ואפס פוזה קפואה.
+<section class="hero hero--home" id="top">
+  <div class="container hero__grid">
+    <div class="hero__text">
+      <p class="eyebrow">צילום אומנותי · רחובות</p>
+      <h1 class="hero__title">
+        <span class="hero__signature" lang="en">Olga Katz</span>
+        <span class="hero__name">{{ pr.name_he }}</span>
+      </h1>
+      <p class="hero__subtitle">{{ pr.tagline_he }}</p>
+      <p class="hero__lead">
+        אני מצלמת בוק בת מצווה שנגמר בים בשקיעה, משפחות באור טבעי, גיל שנה, הריון, נשיות ודורות.
+        ומאז דצמבר 2025, בסטודיו הפיין ארט שלי ברחובות, עם רקעים שמחליפים צבע לפי הסיפור.
       </p>
-      <p>
-        בין הפריימים שאני אוהבת ביותר הן תמונות של תנועה, והשמלות שלי מושלמות בדיוק לזה. כשהבנות שאני מצלמת זורמות
-        איתי ומרגישות כמו נסיכות, אני בכלל מאושרת.
+      <p class="hero__actions">
+        <a class="button" href="{{ site.whatsapp }}" rel="noopener" target="_blank">לתיאום צילומים</a>
+        <a class="button button--ghost" href="{{ '/gallery/' | relative_url }}">לגלריות</a>
       </p>
-      <p><a href="{{ '/gallery/bat_mitzvah/' | relative_url }}">לגלריית בוק בת מצווה</a></p>
+      {% include social-icons.html class="social--hero" %}
     </div>
-    {% include fb-post.html url=pr.seed_post.url title="הידעתם שאני יודעת לגדל פרחים בסטודיו?" %}
-  </div>
-</section>
-
-<section class="section" aria-labelledby="services-title">
-  <div class="container">
-    <div class="section__head">
-      <div>
-        <h2 id="services-title" class="section__title">מה אני מצלמת</h2>
-        <p class="section__hint">לכל סוג צילום יש גלריה ומחירון משלו.</p>
+    <div class="hero__media">
+      <div class="hero__frame">
+        {% include fb-post.html url=pr.seed_post.url title="הידעתם שאני יודעת לגדל פרחים בסטודיו?" %}
       </div>
     </div>
+  </div>
+</section>
+
+<section class="band band--ivory section-anchor" id="about" aria-labelledby="about-title">
+  <div class="container">
+    {% include section-head.html id="about-title" kicker="about me" title="מי אני" lead="צלמת אומנותית, אמא לשלוש בנות, ובעלת סטודיו ברחובות." %}
+    <div class="split split--about">
+      <div class="portrait-card">
+        {% include fb-post.html url="https://www.facebook.com/photo.php?fbid=1441394427993081" width=350 height=580 show_text=false title="אולגה כץ, פורטרט" %}
+      </div>
+      <div class="prose-block">
+        <p>
+          שנים חלמתי על סטודיו משלי. לא חלק מהסלון, לא על הדרך, לא ליד. מדויק, קרוב, אבל בנפרד. בדצמבר 2025 פתחתי אותו
+          ללקוחות שלי: סטודיו פיין ארט, ליצירות מלאות צבע, עומק ונוכחות. ובחוץ, הבוקים שלי מתחילים בשדה, בפריחה או עם סוס
+          לבן, ונגמרים בחוף, דקות אחרי שהשמש מתחבאת מעבר לאופק.
+        </p>
+        <p>
+          כשאני פוגשת אותן, את הילדות האלה שיש להן כבר טעם משלהן וחלומות, אני רואה אותן נפתחות כמו פרח קסום. לכל אחת
+          שמצטלמת מגיע לקבל מקום, שיראו אותה, שיתנו ביטוי למי שהיא.
+        </p>
+        <p><a class="button button--ghost" href="{{ '/about/' | relative_url }}">עוד עליי</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band section-anchor" id="services" aria-labelledby="services-title">
+  <div class="container">
+    {% include section-head.html id="services-title" kicker="what I shoot" title="מה אני מצלמת" lead="לכל סוג צילום יש גלריה ומחירון משלו." %}
     <div class="services">
       {% for s in site.data.services %}{% include service.html service=s %}{% endfor %}
     </div>
   </div>
 </section>
 
-<section class="section" aria-labelledby="works-title">
+<section class="band band--blush section-anchor" id="gallery" aria-labelledby="gallery-title">
   <div class="container">
-    <div class="section__head">
-      <div>
-        <h2 id="works-title" class="section__title">מהאינסטגרם שלי</h2>
-        <p class="section__hint">עבודות אחרונות. לחיצה פותחת את הפוסט המקורי.</p>
-      </div>
-      <a class="button button--ghost" href="{{ '/gallery/' | relative_url }}">לכל הגלריות</a>
-    </div>
+    {% include section-head.html id="gallery-title" kicker="gallery" title="מהאינסטגרם שלי" lead="עבודות אחרונות. לחיצה פותחת את הפוסט המקורי, והגלריות המלאות מסודרות לפי סוג צילום." %}
     <div class="embeds">
       {% assign home_works = site.data.works | where: "home", true %}
       {% for w in home_works %}{% include embed.html work=w %}{% endfor %}
     </div>
+    <p class="center-actions">
+      <a class="button" href="{{ '/gallery/' | relative_url }}">לכל הגלריות</a>
+    </p>
   </div>
 </section>
 
-<section class="section" aria-labelledby="quotes-title">
+<section class="band band--ivory section-anchor" id="pricing" aria-labelledby="pricing-title">
   <div class="container">
-    <h2 id="quotes-title" class="section__title">במילים שלי</h2>
+    {% include section-head.html id="pricing-title" kicker="prices" title="המחירון שלי" lead="שלוש חבילות לכל סוג צילום. המחירים כפי שפרסמתי, נכון לנובמבר 2026." %}
+    <div class="price-summary">
+      {% for c in site.data.pricing.categories %}
+        {% assign prices = c.packages | map: "price" | sort %}
+        <a class="price-card" href="{{ '/pricing/' | relative_url }}#p-{{ c.key }}">
+          <h3>{{ c.title_he }}</h3>
+          <p class="price-card__from"><span>החל מ-</span><strong>₪{{ prices | first }}</strong></p>
+          <ul>
+            {% for p in c.packages %}<li>{{ p.name_he }} · ₪{{ p.price }}</li>{% endfor %}
+          </ul>
+          <span class="price-card__more">לפירוט החבילות</span>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="band section-anchor" id="quotes" aria-labelledby="quotes-title">
+  <div class="container">
+    {% include section-head.html id="quotes-title" kicker="in my words" title="במילים שלי" %}
     <div class="quotes">
       {% for q in site.data.quotes limit: 3 %}
         <blockquote>
@@ -92,17 +111,16 @@ facebook_embeds: true
   </div>
 </section>
 
-<section class="section" aria-labelledby="teach-title">
+<section class="band band--blush section-anchor" id="workshops" aria-labelledby="workshops-title">
   <div class="container">
-    <div class="teaser">
+    {% include section-head.html id="workshops-title" kicker="workshops" title="לצלמות ולצלמים" lead="אני גם מלמדת. סדנאות באור טבעי, סדנאות סטודיו והדרכות לצלמות בתחילת הדרך." %}
+    <div class="teaser teaser--plain">
       <div>
-        <p class="eyebrow">לצלמות ולצלמים</p>
-        <h2 id="teach-title">אני גם מלמדת</h2>
         <p>
-          סדנאות באור טבעי, סדנאות סטודיו והדרכות לצלמות בתחילת הדרך. ב-2020 הרציתי בפוטו טיפס, קהילת לימוד הצילום
-          הגדולה בישראל, על צילומי משפחה באור טבעי.
+          ב-2020 הרציתי בפוטו טיפס על צילומי משפחה באור טבעי, ב-2022 לימדתי את שיעורי הסטודיו והילדים בקורס המשפחה של
+          קהילת צבד, והעברתי סדנת עריכה אומנותית בפוטושופ. מי שרוצה ללמוד את הסגנון שלי, לומד אותו ממני.
         </p>
-        <p><a href="{{ '/workshops/' | relative_url }}">על הסדנאות שלי</a></p>
+        <p><a class="button button--ghost" href="{{ '/workshops/' | relative_url }}">על הסדנאות שלי</a></p>
       </div>
       <blockquote class="teaser__aside">
         לפעמים שווה להפוך הכל לרגע בשביל לקבל עוד נקודת מבט.
@@ -112,13 +130,17 @@ facebook_embeds: true
   </div>
 </section>
 
-<section class="section" aria-labelledby="contact-title">
-  <div class="container">
-    <h2 id="contact-title" class="section__title">בואו נדבר</h2>
-    <p class="lead">הדרך הכי מהירה אליי היא וואטסאפ. ספרו לי מה חוגגים, מתי בערך וכמה מצולמים, ואחזור אליכם עם הצעה.</p>
-    <p class="hero__actions">
+<section class="band band--ivory section-anchor" id="contact" aria-labelledby="contact-title">
+  <div class="container contact">
+    {% include section-head.html id="contact-title" kicker="let's talk" title="בואו נדבר" lead="הדרך הכי מהירה אליי היא וואטסאפ. ספרו לי מה חוגגים, מתי בערך וכמה מצולמים, ואחזור אליכם עם הצעה." %}
+    {% include social-icons.html class="social--large" %}
+    <p class="hero__actions center-actions">
       <a class="button" href="{{ site.whatsapp }}" rel="noopener" target="_blank">לתיאום צילומים בוואטסאפ</a>
       <a class="button button--ghost" href="{{ '/contact/' | relative_url }}">כל דרכי הקשר</a>
+    </p>
+    <p class="contact__trust">
+      הסטודיו שלי ברחובות, צילומי חוץ בטבע ובחופים של השפלה והמרכז.
+      <a href="{{ site.facebook_reviews }}" rel="noopener" target="_blank">10 המלצות בפייסבוק, כולן חיוביות</a>.
     </p>
   </div>
 </section>
